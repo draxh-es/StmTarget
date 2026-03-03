@@ -1,0 +1,26 @@
+#include <stdint.h>
+
+#define DEMCR           (*(volatile uint32_t*)0xE000EDFCU)
+#define TRCENA_BIT      (1UL << 24)
+#define ITM_TER         (*(volatile uint32_t*)0xE0000E00U)
+#define ITM_TCR         (*(volatile uint32_t*)0xE0000E80U)
+#define ITM_STIM0_U8    (*(volatile uint8_t *)0xE0000000U)
+
+void ITM_SendChar(uint8_t ch)
+{
+    DEMCR |= TRCENA_BIT;
+    ITM_TCR |= 1UL;
+    ITM_TER |= 1UL;
+    ITM_STIM0_U8 = ch;
+}
+
+int main(void)
+{
+    for (volatile uint32_t i = 0; i < 5000000; i++);
+
+    while (1)
+    {
+        ITM_SendChar('.');
+        for (volatile uint32_t d = 0; d < 2000000; d++);
+    }
+}

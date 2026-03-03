@@ -1,0 +1,10 @@
+09:06:14 **** Incremental Build of configuration Debug for project 001Float ****
+make -j12 all 
+arm-none-eabi-size  001Float.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21692	    488	   1904	  24084	   5e14	001Float.elf
+Finished building: default.size.stdout
+ 
+
+09:06:15 Build Finished. 0 errors, 0 warnings. (took 73ms)
+

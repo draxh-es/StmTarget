@@ -1,0 +1,59 @@
+# STM32CubeIDE / Eclipse workspace junk
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+.settings/
+
+# Build outputs
+Debug/
+Release/
+*/Debug/
+*/Release/
+
+# Compiled / generated
+*.o
+*.a
+*.d
+*.su
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+# STM32CubeIDE / Eclipse workspace junk
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+.settings/
+
+# Build outputs
+Debug/
+Release/
+*/Debug/
+*/Release/
+
+# Compiled / generated
+*.o
+*.a
+*.d
+*.su
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
